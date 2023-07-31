@@ -72,9 +72,9 @@ public class Login extends JFrame implements ActionListener {
 
 //        getContentPane().setBackground(Color.WHITE);
 
-        setSize(650,500); // setting size of frame
+        setSize(700,500); // setting size of frame
         setVisible(true); // visibility on
-        setLocation(450, 200);
+        setLocation(400, 200);
     }
 
     @Override
