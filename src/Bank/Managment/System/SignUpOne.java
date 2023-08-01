@@ -2,23 +2,26 @@ package Bank.Managment.System;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Random;
 import com.toedter.calendar.JDateChooser;
 
-public class SignUpOne extends JFrame {
+public class SignUpOne extends JFrame implements ActionListener {
 
     private JLabel l1, l2,l3,l4,l5,l6,l7,l8,l9,l10, l11, l12, l13;
     private JTextField t4,t5,t8,t10,t11,t12,t13;
     private JDateChooser t6;
     private JRadioButton rb1, rb2, rb3, rb4;
     private JButton next;
+    private long randVal;
 
     SignUpOne(){
         setLayout(null);
 
         setTitle("New SBI Account Application Form");
         Random rand = new Random();
-        long randVal = Math.abs((rand.nextLong() % 9000L) + 1000L);
+        randVal = Math.abs((rand.nextLong() % 9000L) + 1000L);
         // System.out.println(randVal);
 
         // -------- Adding Labels --------------
@@ -176,6 +179,7 @@ public class SignUpOne extends JFrame {
         next.setForeground(Color.WHITE);
         next.setBackground(Color.BLACK);
         next.setBounds(300, 640, 100, 30);
+        next.addActionListener(this);
         add(next);
 //        getContentPane().setBackground(Color.WHITE);
         setSize(700,800);
@@ -183,7 +187,59 @@ public class SignUpOne extends JFrame {
         setVisible(true);
     }
 
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String formNo, name, fatherName, dob, gender, email, marital, address, city, pincode, state;
+
+        formNo = "" + randVal;
+        name = t4.getText();
+        fatherName = t5.getText();
+        dob =  ((JTextField) t6.getDateEditor().getUiComponent()).getText();
+        gender = null;
+
+        if(rb1.isSelected()){
+            gender = "Male";
+        }else if(rb2.isSelected()){
+            gender = "Female";
+        }
+
+        email = t8.getText();
+        marital = null;
+        if(rb3.isSelected()){
+            marital = "Married";
+        }else if(rb4.isSelected()){
+            marital = "Unmarried";
+        }
+
+        address = t10.getText();
+        city = t11.getText();
+        pincode = t12.getText();
+        state = t13.getText();
+
+        try{
+            if(name.equals("") || fatherName.equals("") || dob.equals("") || gender.equals("") || email.equals("")
+            || marital.equals("") || address.equals("") || city.equals("") || pincode.equals("") || state.equals("")){
+                JOptionPane.showMessageDialog(null, "Every Field is Required!");
+            }else{
+                Conn c = new Conn();
+                String q1 = "insert into signup values('"+formNo+"','"+name+"','"+fatherName+"','"+dob+"','"+gender+"'," +
+                        "'"+email+"','"+marital+"','"+address+"','"+city+"','"+pincode+"','"+state+"')";
+                c.s.executeUpdate(q1);
+                JOptionPane.showMessageDialog(null, "Data Saved to DB!");
+
+                setVisible(false);
+                new SignUpTwo(randVal).setVisible(true);
+            }
+
+        }catch (Exception error){
+            System.out.println(error);
+        }
+
+    }
+
     public static void main(String[] args) {
         new SignUpOne();
     }
+
 }
