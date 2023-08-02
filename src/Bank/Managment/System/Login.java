@@ -24,24 +24,24 @@ public class Login extends JFrame implements ActionListener {
         add(label);
 
         JLabel text = new JLabel("Welcome to State Bank Of India");
-        text.setFont(new Font("Oswald", Font.BOLD, 24));
+        text.setFont(new Font("SANS_SERIF", Font.BOLD, 24));
         text.setBounds(170,60,400,40);
         add(text);
 
         JLabel cardNo = new JLabel("Enter Your Card No : ");
-        cardNo.setFont(new Font("Oswald", Font.ITALIC, 15));
+        cardNo.setFont(new Font("SANS_SERIF", Font.ITALIC, 15));
         cardNo.setBounds(130,120,400,40);
         add(cardNo);
 
         cardTextField = new JTextField();
-        cardTextField.setFont(new Font("Arial", Font.PLAIN, 15));
+        cardTextField.setFont(new Font("SANS_SERIF", Font.PLAIN, 15));
         cardTextField.setBounds(130,160,400,40);
         add(cardTextField);
 
 
         JLabel atmPin = new JLabel("Enter Your ATM Pin : ");
-        atmPin.setFont(new Font("Arial", Font.PLAIN, 15));
-        atmPin.setFont(new Font("Oswald", Font.ITALIC, 15));
+        atmPin.setFont(new Font("SANS_SERIF", Font.PLAIN, 15));
+        atmPin.setFont(new Font("SANS_SERIF", Font.ITALIC, 15));
         atmPin.setBounds(130,200,400,40);
         add(atmPin);
 

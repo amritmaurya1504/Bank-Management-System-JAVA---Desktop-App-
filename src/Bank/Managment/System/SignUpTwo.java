@@ -22,9 +22,6 @@ public class SignUpTwo extends JFrame implements ActionListener {
         setLayout(null);
 
         setTitle("New SBI Account Application Form - Page 2");
-        Random rand = new Random();
-//        randVal = Math.abs((rand.nextLong() % 9000L) + 1000L);
-        // System.out.println(randVal);
 
         // -------- Adding Labels --------------
 
@@ -40,30 +37,30 @@ public class SignUpTwo extends JFrame implements ActionListener {
 
 
         l2 = new JLabel("Application Form No : " + randVal);
-        l2.setFont(new Font("Raleway", Font.BOLD, 23));
+        l2.setFont(new Font("SANS_SERIF", Font.BOLD, 23));
         l2.setBounds(170,40,600,40);
         add(l2);
 
         l3 = new JLabel("Page 2 : Additional Details");
-        l3.setFont(new Font("Raleway", Font.PLAIN, 15));
+        l3.setFont(new Font("SANS_SERIF", Font.PLAIN, 15));
         l3.setForeground(Color.DARK_GRAY);
         l3.setBounds(170,65,200,40);
         add(l3);
 
         l4 = new JLabel("Religion : ");
-        l4.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l4.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l4.setForeground(Color.DARK_GRAY);
         l4.setBounds(90,130,200,30);
         add(l4);
 
         l5 = new JLabel("Category : ");
-        l5.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l5.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l5.setForeground(Color.DARK_GRAY);
         l5.setBounds(90,180,200,30);
         add(l5);
 
         l6 = new JLabel("Income : ");
-        l6.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l6.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l6.setForeground(Color.DARK_GRAY);
         l6.setBounds(90,230,200,30);
         add(l6);
@@ -75,45 +72,45 @@ public class SignUpTwo extends JFrame implements ActionListener {
         add(c3);
 
         l7 = new JLabel("Educational");
-        l7.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l7.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l7.setForeground(Color.DARK_GRAY);
         l7.setBounds(90,280,200,30);
         add(l7);
 
         l7a = new JLabel("Qualification : ");
-        l7a.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l7a.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l7a.setForeground(Color.DARK_GRAY);
         l7a.setBounds(90,300,200,30);
         add(l7a);
 
 
         l8 = new JLabel("Occupation : ");
-        l8.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l8.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l8.setForeground(Color.DARK_GRAY);
         l8.setBounds(90,350,200,30);
         add(l8);
 
         l9 = new JLabel("PAN Number : ");
-        l9.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l9.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l9.setForeground(Color.DARK_GRAY);
         l9.setBounds(90,400,200,30);
         add(l9);
 
 
         l10 = new JLabel("Aadhar Number : ");
-        l10.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l10.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l10.setForeground(Color.DARK_GRAY);
         l10.setBounds(90,450,200,30);
         add(l10);
 
         l11 = new JLabel("Senior Citizen : ");
-        l11.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l11.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l11.setForeground(Color.DARK_GRAY);
         l11.setBounds(90,500,200,30);
         add(l11);
 
         l12 = new JLabel("Existing Account : ");
-        l12.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l12.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l12.setForeground(Color.DARK_GRAY);
         l12.setBounds(90,550,200,30);
         add(l12);
@@ -122,36 +119,36 @@ public class SignUpTwo extends JFrame implements ActionListener {
         // -------- Adding Text Fields ----------------
         String religion[] = {"Hindu","Muslim","Sikh","Christian","Other"};
         c1 = new JComboBox(religion);
-        c1.setFont(new Font("Arial", Font.PLAIN, 14));
+        c1.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         c1.setBounds(260,135,340,30);
         add(c1);
 
         String category[] = {"General","OBC","SC","ST","Other"};
         c2 = new JComboBox(category);
-        c2.setFont(new Font("Arial", Font.PLAIN, 14));
+        c2.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         c2.setBounds(260,180,340,30);
         add(c2);
 
         String education[] = {"Non-Graduate","Graduate","Post-Graduate","Doctrate","Others"};
         c4 = new JComboBox(education);
-        c4.setFont(new Font("Arial", Font.PLAIN, 14));
+        c4.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         c4.setBounds(260,300,340,30);
         add(c4);
 
         String occupation[] = {"Salaried","Self-Employmed","Business","Student","Retired","Others"};
         c5 = new JComboBox(occupation);
-        c5.setFont(new Font("Arial", Font.PLAIN, 14));
+        c5.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         c5.setBounds(260,350,340,30);
         add(c5);
 
 
         t9 = new JTextField();
-        t9.setFont(new Font("Arial", Font.PLAIN, 14));
+        t9.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         t9.setBounds(260,405,340,30);
         add(t9);
 
         t10 = new JTextField();
-        t10.setFont(new Font("Arial", Font.PLAIN, 14));
+        t10.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         t10.setBounds(260,450,340,30);
         add(t10);
 
@@ -231,13 +228,15 @@ public class SignUpTwo extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Every Field is Required!");
             }else{
                 Conn c = new Conn();
-                String q1 = "insert into signupTwo values('"+formNo+"','"+religion+"','"+category+"'," +
+                String q1 = "insert into SignUpTwo values('"+formNo+"','"+religion+"','"+category+"'," +
                         "'"+income+"','"+education+"','"+occupation+"','"+pan+"','"+aadhar+"'," +
                         "'"+scitizen+"','"+eaccount+"')";
                 c.s.executeUpdate(q1);
-                JOptionPane.showMessageDialog(null, "Data Saved to DB!");
+                //JOptionPane.showMessageDialog(null, "Data Saved to DB!");
 
                 // SignUp 3 Object
+                setVisible(false);
+                new SignUpThree(formNo).setVisible(true);
             }
 
         }catch (Exception error){
@@ -246,7 +245,7 @@ public class SignUpTwo extends JFrame implements ActionListener {
 
     }
 
-    public static void main(String[] args) {
-        new SignUpTwo(1233);
-    }
+//    public static void main(String[] args) {
+//        new SignUpTwo(1233);
+//    }
 }

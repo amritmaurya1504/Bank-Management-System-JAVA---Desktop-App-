@@ -38,30 +38,30 @@ public class SignUpOne extends JFrame implements ActionListener {
 
 
         l2 = new JLabel("Application Form No : " + randVal);
-        l2.setFont(new Font("Raleway", Font.BOLD, 23));
+        l2.setFont(new Font("SANS_SERIF", Font.BOLD, 23));
         l2.setBounds(170,40,600,40);
         add(l2);
 
         l3 = new JLabel("Page 1 : Personal Details");
-        l3.setFont(new Font("Raleway", Font.PLAIN, 15));
+        l3.setFont(new Font("SANS_SERIF", Font.PLAIN, 15));
         l3.setForeground(Color.DARK_GRAY);
         l3.setBounds(170,65,200,40);
         add(l3);
 
         l4 = new JLabel("Name : ");
-        l4.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l4.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l4.setForeground(Color.DARK_GRAY);
         l4.setBounds(90,130,200,30);
         add(l4);
 
         l5 = new JLabel("Father's Name : ");
-        l5.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l5.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l5.setForeground(Color.DARK_GRAY);
         l5.setBounds(90,180,200,30);
         add(l5);
 
         l6 = new JLabel("Date of Birth : ");
-        l6.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l6.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l6.setForeground(Color.DARK_GRAY);
         l6.setBounds(90,230,200,30);
         add(l6);
@@ -72,7 +72,7 @@ public class SignUpOne extends JFrame implements ActionListener {
         add(t6);
 
         l7 = new JLabel("Gender : ");
-        l7.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l7.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l7.setForeground(Color.DARK_GRAY);
         l7.setBounds(90,280,200,30);
         add(l7);
@@ -91,13 +91,13 @@ public class SignUpOne extends JFrame implements ActionListener {
         genderGroup.add(rb2);
 
         l8 = new JLabel("Email ID : ");
-        l8.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l8.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l8.setForeground(Color.DARK_GRAY);
         l8.setBounds(90,330,200,30);
         add(l8);
 
         l9 = new JLabel("Marital Status : ");
-        l9.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l9.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l9.setForeground(Color.DARK_GRAY);
         l9.setBounds(90,380,200,30);
         add(l9);
@@ -116,62 +116,62 @@ public class SignUpOne extends JFrame implements ActionListener {
         mariedGround.add(rb4);
 
         l10 = new JLabel("Address : ");
-        l10.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l10.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l10.setForeground(Color.DARK_GRAY);
         l10.setBounds(90,430,200,30);
         add(l10);
 
         l11 = new JLabel("City : ");
-        l11.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l11.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l11.setForeground(Color.DARK_GRAY);
         l11.setBounds(90,480,200,30);
         add(l11);
 
         l12 = new JLabel("PinCode : ");
-        l12.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l12.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l12.setForeground(Color.DARK_GRAY);
         l12.setBounds(90,530,200,30);
         add(l12);
 
         l13 = new JLabel("State : ");
-        l13.setFont(new Font("Raleway", Font.PLAIN, 18));
+        l13.setFont(new Font("SANS_SERIF", Font.PLAIN, 18));
         l13.setForeground(Color.DARK_GRAY);
         l13.setBounds(90,580,200,30);
         add(l13);
 
         // -------- Adding Text Fields ----------------
         t4 = new JTextField();
-        t4.setFont(new Font("Arial", Font.PLAIN, 14));
+        t4.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         t4.setBounds(260,135,340,30);
         add(t4);
 
         t5 = new JTextField();
-        t5.setFont(new Font("Arial", Font.PLAIN, 14));
+        t5.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         t5.setBounds(260,180,340,30);
         add(t5);
 
         t8 = new JTextField();
-        t8.setFont(new Font("Arial", Font.PLAIN, 14));
+        t8.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         t8.setBounds(260,335,340,30);
         add(t8);
 
         t10 = new JTextField();
-        t10.setFont(new Font("Arial", Font.PLAIN, 14));
+        t10.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         t10.setBounds(260,440,340,30);
         add(t10);
 
         t11 = new JTextField();
-        t11.setFont(new Font("Arial", Font.PLAIN, 14));
+        t11.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         t11.setBounds(260,485,340,30);
         add(t11);
 
         t12 = new JTextField();
-        t12.setFont(new Font("Arial", Font.PLAIN, 14));
+        t12.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         t12.setBounds(260,530,340,30);
         add(t12);
 
         t13 = new JTextField();
-        t13.setFont(new Font("Arial", Font.PLAIN, 14));
+        t13.setFont(new Font("SANS_SERIF", Font.PLAIN, 14));
         t13.setBounds(260,575,340,30);
         add(t13);
 
@@ -223,10 +223,10 @@ public class SignUpOne extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Every Field is Required!");
             }else{
                 Conn c = new Conn();
-                String q1 = "insert into signup values('"+formNo+"','"+name+"','"+fatherName+"','"+dob+"','"+gender+"'," +
+                String q1 = "insert into SignUpMain values('"+formNo+"','"+name+"','"+fatherName+"','"+dob+"','"+gender+"'," +
                         "'"+email+"','"+marital+"','"+address+"','"+city+"','"+pincode+"','"+state+"')";
                 c.s.executeUpdate(q1);
-                JOptionPane.showMessageDialog(null, "Data Saved to DB!");
+                //JOptionPane.showMessageDialog(null, "Data Saved to DB!");
 
                 setVisible(false);
                 new SignUpTwo(randVal).setVisible(true);
@@ -238,8 +238,8 @@ public class SignUpOne extends JFrame implements ActionListener {
 
     }
 
-    public static void main(String[] args) {
-        new SignUpOne();
-    }
+//    public static void main(String[] args) {
+//        new SignUpOne();
+//    }
 
 }
