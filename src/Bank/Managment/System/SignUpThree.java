@@ -189,12 +189,12 @@ public class SignUpThree extends JFrame implements ActionListener {
 
         // ---- Buttons --------
 
-        b1 = new JButton("Submit");
+        b1 = new JButton("SUBMIT");
         b1.setFont(new Font("Raleway", Font.BOLD, 14));
         b1.setBackground(Color.BLACK);
         b1.setForeground(Color.WHITE);
 
-        b2 = new JButton("Cancel");
+        b2 = new JButton("CANCEL");
         b2.setFont(new Font("Raleway", Font.BOLD, 14));
         b2.setBackground(Color.BLACK);
         b2.setForeground(Color.WHITE);
@@ -271,9 +271,11 @@ public class SignUpThree extends JFrame implements ActionListener {
                                 + cardno + "\n Pin:"+ pin);
 
                         setVisible(false);
+                        new Deposit(pin).setVisible(true);
 
                     }else if(ae.getSource() == b2){
-                        System.exit(0);
+                        setVisible(false);
+                        new Login().setVisible(true);
                     }
                 }else{
                     JOptionPane.showMessageDialog(null, "Please check the declaration checkbox!");

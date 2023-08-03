@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
 public class Login extends JFrame implements ActionListener {
     JButton login, register, clear; // Global Variable
@@ -49,21 +50,21 @@ public class Login extends JFrame implements ActionListener {
         pinTextField.setBounds(130,240,400,40);
         add(pinTextField);
 
-        login = new JButton("Login");
+        login = new JButton("LOGIN");
         login.setBounds(170, 320, 150, 30);
         login.setBackground(Color.BLACK);
         login.setForeground(Color.WHITE);
         login.addActionListener(this);
         add(login);
 
-        register = new JButton("Register");
+        register = new JButton("REGISTER");
         register.setBounds(340, 320, 150, 30);
         register.setBackground(Color.BLACK);
         register.setForeground(Color.WHITE);
         register.addActionListener(this);
         add(register);
 
-        clear = new JButton("Clear");
+        clear = new JButton("CLEAR");
         clear.setBounds(250, 370, 150, 30);
         clear.setBackground(Color.BLACK);
         clear.setForeground(Color.WHITE);
@@ -81,6 +82,23 @@ public class Login extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         // What to do if some buttons is clicked
         if(e.getSource() == login){
+            Conn c = new Conn();
+            String cardno = cardTextField.getText();
+            String pin = pinTextField.getText();
+
+            String query = "select * from Login where cardno = '"+cardno+"' and pin = '"+pin+"'";
+
+            try{
+                ResultSet rs = c.s.executeQuery(query);
+                if(rs.next()){
+                    setVisible(false);
+                    new Transaction(pin).setVisible(true);
+                }else{
+                    JOptionPane.showMessageDialog(null, "Incorrect Card Number or PIN");
+                }
+            }catch (Exception err){
+                System.out.println(err);
+            }
 
         }else if(e.getSource() == register){
             setVisible(false);

@@ -175,7 +175,7 @@ public class SignUpOne extends JFrame implements ActionListener {
         t13.setBounds(260,575,340,30);
         add(t13);
 
-        next = new JButton("Next");
+        next = new JButton("NEXT");
         next.setForeground(Color.WHITE);
         next.setBackground(Color.BLACK);
         next.setBounds(300, 640, 100, 30);

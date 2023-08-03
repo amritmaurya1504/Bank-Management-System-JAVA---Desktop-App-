@@ -182,7 +182,7 @@ public class SignUpTwo extends JFrame implements ActionListener {
 
 
 
-        next = new JButton("Next");
+        next = new JButton("NEXT");
         next.setForeground(Color.WHITE);
         next.setBackground(Color.BLACK);
         next.setBounds(300, 640, 100, 30);
